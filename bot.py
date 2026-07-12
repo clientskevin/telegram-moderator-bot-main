@@ -207,7 +207,7 @@ def main():
                     "text": text
                 }
             )
-            seconds += get_value(10, 600)
+            seconds += get_value(2, 5)
 
     logging.info("Running polling")
     app.run_polling()
