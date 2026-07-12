@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  moderator_bot:
+    container_name: moderator_bot
+    entrypoint: ["python", "bot.py"]
+    build:
+      context: .
+    init: true
+    ports:
+      - 80:80
+    volumes:
+      - ./:/app
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TELEGRAM_MODERATOR_BOT_TOKEN=${TELEGRAM_MODERATOR_BOT_TOKEN}
+      - ENVIRON=${ENVIRON}
+  channel_bot:
+    container_name: channel_bot
+    entrypoint: ["python", "channel_bot.py"]
+    build:
+      context: .
+    init: true
+    volumes:
+      - ./:/app
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - TELEGRAM_CHANNEL_POSTER_BOT_TOKEN=${TELEGRAM_CHANNEL_POSTER_BOT_TOKEN}
+      - ENVIRON=${ENVIRON}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moderator Bot POC</title>
+  </head>
+  <body>
+    <h1>Moderator Bot POC</h1>
+    <form method="POST">
+      <label for="text">Enter Text:</label>
+      <input type="text" id="text" name="text" required />
+      <button type="submit">Analyze</button>
+    </form>
+    {% if result %}
+    <p>Result: {{ result }}</p>
+    {% endif %}
+  </body>
+</html>
