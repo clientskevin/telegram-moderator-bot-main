@@ -71,7 +71,7 @@ if Env.ENVIRON == "prod":
         # Message 1: Sends every 24 hours (1x a day), starting immediately
         {
             "chat_id": -1001622898322,
-            "threads": [238474, 1, 1165021, 1723216, 1267563],
+            "threads": [238474, 1, 1165021, 1267563],
             "text": "Trade with up to 400.000$ in capital. Instantly today. Www.ertfundedfred.com 👈🏻",
             "interval_seconds": 86400,
             "first_seconds": 0
@@ -79,7 +79,7 @@ if Env.ENVIRON == "prod":
         # Message 2: Sends every 24 hours (1x a day), starting after 12 hours (43200 seconds)
         {
             "chat_id": -1001622898322,
-            "threads": [238474, 1, 1165021, 1723216, 1267563],
+            "threads": [238474, 1, 1165021, 1267563],
             "text": "Out of capital? Get a 100% TRADEABLE deposit bonus up until 5000$ today. Sign up here💰\n\n👉🏻 https://fred-frost.com/bullwave/ 👈🏻",
             "interval_seconds": 86400,
             "first_seconds": 43200
