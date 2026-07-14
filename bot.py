@@ -49,21 +49,40 @@ if Env.ENVIRON == "prod":
         -1001622898322: [158009, 1165021, 238474, 1723216, 1]
     }
     REMINDERS_TO_SEND = [
-        # Message 1: Sends every 4 hours, starting immediately
+        # --- GOLD CHAT (Thread 158009) ---
+        # Message 1: Sends every 8 hours (3x a day), starting immediately
         {
             "chat_id": -1001622898322,
-            "threads": [158009, 238474, 1, 1165021, 1723216, 1267563],
+            "threads": [158009],
             "text": "Trade with up to 400.000$ in capital. Instantly today. Www.ertfundedfred.com 👈🏻",
-            "interval_seconds": 14400,
+            "interval_seconds": 28800,
             "first_seconds": 0
         },
-        # Message 2: Sends every 4 hours, starting after 2 hours (7200 seconds)
+        # Message 2: Sends every 8 hours (3x a day), starting after 4 hours (14400 seconds)
         {
             "chat_id": -1001622898322,
-            "threads": [158009, 238474, 1, 1165021, 1723216, 1267563],
+            "threads": [158009],
             "text": "Out of capital? Get a 100% TRADEABLE deposit bonus up until 5000$ today. Sign up here💰\n\n👉🏻 https://fred-frost.com/bullwave/ 👈🏻",
-            "interval_seconds": 14400,
-            "first_seconds": 7200
+            "interval_seconds": 28800,
+            "first_seconds": 14400
+        },
+
+        # --- OTHER CHATS (All other threads) ---
+        # Message 1: Sends every 24 hours (1x a day), starting immediately
+        {
+            "chat_id": -1001622898322,
+            "threads": [238474, 1, 1165021, 1723216, 1267563],
+            "text": "Trade with up to 400.000$ in capital. Instantly today. Www.ertfundedfred.com 👈🏻",
+            "interval_seconds": 86400,
+            "first_seconds": 0
+        },
+        # Message 2: Sends every 24 hours (1x a day), starting after 12 hours (43200 seconds)
+        {
+            "chat_id": -1001622898322,
+            "threads": [238474, 1, 1165021, 1723216, 1267563],
+            "text": "Out of capital? Get a 100% TRADEABLE deposit bonus up until 5000$ today. Sign up here💰\n\n👉🏻 https://fred-frost.com/bullwave/ 👈🏻",
+            "interval_seconds": 86400,
+            "first_seconds": 43200
         }
     ]
 else:
