@@ -50,39 +50,39 @@ if Env.ENVIRON == "prod":
     }
     REMINDERS_TO_SEND = [
         # --- GOLD CHAT (Thread 158009) ---
-        # Message 1: Sends every 8 hours (3x a day), starting immediately
+        # Message 1: Sends every 8 hours (3x a day), starting after 8 hours (28800 seconds)
         {
             "chat_id": -1001622898322,
             "threads": [158009],
             "text": "Trade with up to 400.000$ in capital. Instantly today. Www.ertfundedfred.com 👈🏻",
             "interval_seconds": 28800,
-            "first_seconds": 0
+            "first_seconds": 28800
         },
-        # Message 2: Sends every 8 hours (3x a day), starting after 4 hours (14400 seconds)
+        # Message 2: Sends every 8 hours (3x a day), starting after 12 hours (43200 seconds)
         {
             "chat_id": -1001622898322,
             "threads": [158009],
             "text": "Out of capital? Get a 100% TRADEABLE deposit bonus up until 5000$ today. Sign up here💰\n\n👉🏻 https://fred-frost.com/bullwave/ 👈🏻",
             "interval_seconds": 28800,
-            "first_seconds": 14400
+            "first_seconds": 43200
         },
 
         # --- OTHER CHATS (All other threads) ---
-        # Message 1: Sends every 24 hours (1x a day), starting immediately
+        # Message 1: Sends every 24 hours (1x a day), starting after 24 hours (86400 seconds)
         {
             "chat_id": -1001622898322,
             "threads": [238474, 1, 1165021, 1267563],
             "text": "Trade with up to 400.000$ in capital. Instantly today. Www.ertfundedfred.com 👈🏻",
             "interval_seconds": 86400,
-            "first_seconds": 0
+            "first_seconds": 86400
         },
-        # Message 2: Sends every 24 hours (1x a day), starting after 12 hours (43200 seconds)
+        # Message 2: Sends every 24 hours (1x a day), starting after 36 hours (129600 seconds)
         {
             "chat_id": -1001622898322,
             "threads": [238474, 1, 1165021, 1267563],
             "text": "Out of capital? Get a 100% TRADEABLE deposit bonus up until 5000$ today. Sign up here💰\n\n👉🏻 https://fred-frost.com/bullwave/ 👈🏻",
             "interval_seconds": 86400,
-            "first_seconds": 43200
+            "first_seconds": 129600
         }
     ]
 else:
@@ -90,21 +90,21 @@ else:
         -1001843081678: [213]
     }
     REMINDERS_TO_SEND = [
-        # Message 1: Sends every 60 seconds, starting immediately
+        # Message 1: Sends every 60 seconds, starting after 60 seconds
         {
             "chat_id": -1001843081678,
             "threads": [213],
             "text": "Trade with up to 400.000$ in capital. Instantly today. Www.ertfundedfred.com 👈🏻",
             "interval_seconds": 60,
-            "first_seconds": 0
+            "first_seconds": 60
         },
-        # Message 2: Sends every 60 seconds, starting after 30 seconds
+        # Message 2: Sends every 60 seconds, starting after 90 seconds
         {
             "chat_id": -1001843081678,
             "threads": [213],
             "text": "Out of capital? Get a 100% TRADEABLE deposit bonus up until 5000$ today. Sign up here💰\n\n👉🏻 https://fred-frost.com/bullwave/ 👈🏻",
             "interval_seconds": 60,
-            "first_seconds": 30
+            "first_seconds": 90
         }
     ]
 
